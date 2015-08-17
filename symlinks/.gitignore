@@ -1,0 +1,17 @@
+# Hidden folders
+# Takes care of .tmp, .sass-cache, and many others
+.*/
+
+# OS generated files
+.DS_Store*
+
+# Git remnants
+*.diff
+*.err
+*.log
+*.orig
+*.rej
+
+# Dependency directories
+node_modules
+bower_components

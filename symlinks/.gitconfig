@@ -1,0 +1,24 @@
+[core]
+  editor = subl -n -w
+  excludesfile = ~/.gitignore
+  attributesfile = ~/.gitattributes
+
+[user]
+  name = Rob Wierzbowski
+  email = rob.wierzbowski@gmail.com
+
+[color]
+  ui = auto
+
+[push]
+  # Push to the branch with the same name as current on remote
+  default = current
+  # Make `git push` push relevant annotated tags when pushing branches out.
+  followTags = true
+
+[mergetool "subl"]
+  cmd = subl -w $MERGED
+  trustExitCode = false
+
+[merge]
+  tool = subl
