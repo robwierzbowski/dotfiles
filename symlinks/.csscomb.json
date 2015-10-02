@@ -1,5 +1,4 @@
 {
-  "node-path" : ":/usr/local/bin",
   "config": {
     "always-semicolon": true,
     "block-indent": "  ",
