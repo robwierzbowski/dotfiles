@@ -27,9 +27,10 @@ export PATH="/usr/local/bin:$PATH"
 # Add RVM to PATH for scripting
 export PATH="$PATH:$HOME/.rvm/bin"
 
-# Add token to avoid Github rate limiting with Homebrew
-export HOMEBREW_GITHUB_API_TOKEN=013e025b3e7e3b3069a029bd10b54792ac2f3746
+# Import private, un-versioned auth tokens
+source ~/.auth
 
+# Load OH MY! ZSHHHH
 source $ZSH/oh-my-zsh.sh
 
 # Load up that z search
