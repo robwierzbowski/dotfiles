@@ -56,6 +56,7 @@ unalias -m 'g*'
 # General aliases
 alias zshrc="subl ~/.zshrc"
 alias reload="source ~/.zshrc"
+alias ip="ipconfig getifaddr en0"
 
 # Git aliases
 alias cm="git commit -m"
