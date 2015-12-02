@@ -65,7 +65,6 @@ alias amend="git commit --amend"
 alias branch="git branch"
 alias chk="git checkout"
 alias chp="git cherry-pick"
-alias rebi="git rebase -i"
 alias rebc="git rebase --continue"
 alias stat="git status"
 alias log="git log"
@@ -77,7 +76,9 @@ alias mergetool="git mergetool -y"
 alias scrub="git branch --merged | grep -v '\*' | xargs -n 1 git branch -d"
 
 # Functions
-
+rebi() {
+  git rebase -i HEAD~$@;
+}
 gg() {
   git grep --break --heading --line-number $@;
 }
