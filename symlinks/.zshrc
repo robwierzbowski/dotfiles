@@ -80,6 +80,9 @@ alias scrub="git branch --merged | grep -v '\*' | xargs -n 1 git branch -d"
 rebi() {
   git rebase -i HEAD~$@;
 }
+rebo() {
+  git rebase -i origin/master;
+}
 gg() {
   git grep --break --heading --line-number $@;
 }
