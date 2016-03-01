@@ -26,6 +26,7 @@ export PATH="/usr/local/bin:$PATH"
 
 # Add RVM to PATH for scripting
 export PATH="$PATH:$HOME/.rvm/bin"
+export PATH="$PATH:$HOME/.rvm/gems"
 
 # Import private, un-versioned auth tokens
 source ~/.auth
