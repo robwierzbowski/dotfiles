@@ -92,3 +92,22 @@ ggo() {
 stato() {
   subl $(git status --porcelain | sed -ne 's/^ M //p')
 }
+
+# ### Casper ###
+# Postgres
+export PGHOST=localhost
+
+# nvm
+export NVM_DIR="/Users/RobW/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# Spec helper
+rspecdb() {
+  rake db:setup RAILS_ENV=test
+  rspec $@
+}
+
+# Deploy
+caspd() {
+  git push -f $1 $2:master && heroku run rake db:migrate -r $1
+}
