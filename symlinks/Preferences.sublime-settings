@@ -18,10 +18,11 @@
 		".git",
 		".hg",
 		"CVS",
-		"node_modules",
 		"bower_components",
+		"node_modules",
 		".sass-cache",
-		".tmp"
+		".tmp",
+		"tmp"
 	],
 	"font_face": "Inconsolata-dz",
 	"font_size": 14,
