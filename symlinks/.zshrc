@@ -112,3 +112,6 @@ rspecdb() {
 caspd() {
   git push -f $1 $2:master && heroku run rake db:migrate -r $1
 }
+
+# Disable that horrible heads up display
+export DISABLE_RACK_MINI_PROFILER=true
