@@ -2,7 +2,6 @@
   editor = subl -n -w
   excludesfile = ~/.gitignore
   attributesfile = ~/.gitattributes
-  pager = diff-highlight | less -r
 
 [user]
   name = Rob Wierzbowski
