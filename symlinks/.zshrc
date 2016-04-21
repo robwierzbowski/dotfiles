@@ -22,7 +22,7 @@ plugins=(git zsh-syntax-highlighting)
 export PATH="/usr/bin:/bin:/usr/sbin:/sbin"
 
 # Add Homebrew
-export PATH="/usr/local/bin:$PATH"
+export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 
 # Add RVM to PATH for scripting
 export PATH="$PATH:$HOME/.rvm/bin"
