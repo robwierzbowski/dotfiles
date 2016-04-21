@@ -98,13 +98,12 @@ stato() {
 # Postgres
 export PGHOST=localhost
 
-# nvm
-export NVM_DIR="/Users/RobW/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+# Enable livereload in Casper
+LIVE_RELOAD=true
 
 # Spec helper
 rspecdb() {
-  rake db:setup RAILS_ENV=test
+rake db:drop db:setup RAILS_ENV=test
   rspec $@
 }
 
