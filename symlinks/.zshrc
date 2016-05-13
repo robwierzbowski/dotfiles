@@ -52,26 +52,26 @@ export EDITOR='subl'
 unalias -m 'g*'
 
 # General aliases
-alias zshrc="subl ~/.zshrc"
-alias reload="source ~/.zshrc"
-alias ip="ipconfig getifaddr en0"
+alias zshrc='subl ~/.zshrc'
+alias reload='source ~/.zshrc'
+alias ip='ipconfig getifaddr en0'
 
 # Git aliases
-alias cm="git commit -m"
-alias amend="git commit --amend"
-alias branch="git branch"
-alias chk="git checkout"
-alias chp="git cherry-pick"
-alias rebc="git rebase --continue"
-alias reba="git rebase --abort"
-alias stat="git status"
-alias log="git log"
-alias show="git show"
-alias stash="git stash"
-alias pop="git stash pop"
-alias mergetool="git mergetool -y"
+alias cm='git commit -m'
+alias amend='git commit --amend'
+alias branch='git branch'
+alias chk='git checkout'
+alias chp='git cherry-pick'
+alias rebc='git rebase --continue'
+alias reba='git rebase --abort'
+alias stat='git status'
+alias log='git log'
+alias show='git show'
+alias stash='git stash'
+alias pop='git stash pop'
+alias mergetool='git mergetool -y'
 # Deletes merged branches
-alias scrub="git branch --merged | grep -v '\*' | xargs -n 1 git branch -d"
+alias scrub='git branch --merged | grep -v '\*' | xargs -n 1 git branch -d'
 
 # Functions
 rebi() {
