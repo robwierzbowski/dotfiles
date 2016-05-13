@@ -38,11 +38,7 @@ source $ZSH/oh-my-zsh.sh
 . /usr/local/Cellar/z/1.8/etc/profile.d/z.sh
 
 # Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='subl'
-# else
-#   export EDITOR='subl'
-# fi
+export EDITOR='subl'
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
