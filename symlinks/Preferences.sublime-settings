@@ -15,9 +15,14 @@
 		"mixins",
 		"mixin",
 		"grey",
-		"workflow"
+		"workflow",
+		"viewport",
+		"linebreak",
+		"architected",
+		"serializer",
+		"infographic"
 	],
-	"color_scheme": "Packages/User/SublimeLinter/base16-twilight.dark (SL).tmTheme",
+	"color_scheme": "Packages/User/SublimeLinter/base16-twilight (SL).tmTheme",
 	"ensure_newline_at_eof_on_save": true,
 	"folder_exclude_patterns":
 	[
@@ -26,6 +31,7 @@
 		".hg",
 		"CVS",
 		"bower_components",
+		"assets/jspm_packages",
 		"node_modules",
 		".sass-cache",
 		".tmp",
