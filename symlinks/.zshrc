@@ -69,9 +69,9 @@ alias log='git log'
 alias show='git show'
 alias stash='git stash'
 alias pop='git stash pop'
-alias mergetool='git mergetool -y'
+alias mt='git mergetool -y'
 # Deletes merged branches
-alias scrub='git branch --merged | grep -v '\*' | xargs -n 1 git branch -d'
+alias scrub='git branch --merged | xargs git branch -d'
 
 # Functions
 rebi() {
