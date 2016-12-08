@@ -25,8 +25,11 @@ export PATH="/usr/bin:/bin:/usr/sbin:/sbin"
 export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 
 # Add RVM to PATH for scripting
-export PATH="$PATH:$HOME/.rvm/bin"
 export PATH="$PATH:$HOME/.rvm/gems"
+export PATH="$PATH:$HOME/.rvm/bin"
+
+# Add Yarn packages
+export PATH="$PATH:$HOME/.yarn/bin"
 
 # Import private, un-versioned auth tokens
 source ~/.auth
@@ -36,6 +39,9 @@ source $ZSH/oh-my-zsh.sh
 
 # Load up that z search
 . /usr/local/Cellar/z/1.8/etc/profile.d/z.sh
+
+# Load RVM
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 # Preferred editor for local and remote sessions
 # export EDITOR='subl'
@@ -73,6 +79,10 @@ alias mt='git mergetool -y'
 # Deletes merged branches
 alias scrub='git branch --merged | xargs git branch -d'
 
+# Fix the weird google hangouts no mic issue
+# http://superuser.com/questions/566102/microphone-not-working-with-google-hangout
+alias fixgh="sudo killall coreaudiod"
+
 # Functions
 rebi() {
   git rebase -i HEAD~$@;
@@ -107,6 +117,3 @@ rake db:drop db:setup RAILS_ENV=test
 caspd() {
   git push -f $1 $2:master && heroku run rake db:migrate -r $1
 }
-
-# Disable that horrible heads up display
-export DISABLE_RACK_MINI_PROFILER=true
