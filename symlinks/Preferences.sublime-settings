@@ -36,7 +36,8 @@
 		"node_modules",
 		".sass-cache",
 		".tmp",
-		"tmp"
+		"tmp",
+    "coverage/"
 	],
 	"font_face": "Inconsolata-dz",
 	"font_size": 14,
