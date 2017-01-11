@@ -81,9 +81,9 @@ alias mt='git mergetool -y'
 # Deletes merged branches
 alias scrub='git branch --merged | xargs git branch -d'
 
-# Fix the weird google hangouts no mic issue
+# Fix the weird no mic issue
 # http://superuser.com/questions/566102/microphone-not-working-with-google-hangout
-alias fixgh="sudo killall coreaudiod"
+alias fixaudio="sudo killall coreaudiod"
 
 # Functions
 rebi() {
