@@ -26,3 +26,5 @@
 [alias]
   heroku-prod-deployed-commit=!sh -c 'heroku releases -r production | grep Deploy | tr -s \" \" | cut -d \" \" -f 3 | head -n 1' -
   compare-heroku=!sh -c 'hub compare $(git heroku-prod-deployed-commit)..master' -
+[credential]
+	helper = osxkeychain
