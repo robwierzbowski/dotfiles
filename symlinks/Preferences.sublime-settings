@@ -38,7 +38,8 @@
 		".sass-cache",
 		".tmp",
 		"tmp",
-    "coverage/"
+		"coverage/",
+		"*.js.map"
 	],
 	"font_face": "Inconsolata-dz",
 	"font_size": 14,
