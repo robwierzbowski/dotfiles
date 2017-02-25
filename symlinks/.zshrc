@@ -48,8 +48,8 @@ source $ZSH/oh-my-zsh.sh
 # export EDITOR='subl'
 
 # ssh
+# Figure out how to do this with keychain
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
-
 # ssh-add ~/.ssh/id_rsa
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
