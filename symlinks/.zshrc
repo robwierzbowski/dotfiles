@@ -30,6 +30,7 @@ export PATH="$PATH:$HOME/.rvm/bin"
 
 # Add Yarn packages
 export PATH="$PATH:$HOME/.yarn/bin"
+export PATH="$PATH:$HOME/usr/local/Cellar/node/7.2.0/bin"
 
 # Import private, un-versioned auth tokens
 source ~/.auth
