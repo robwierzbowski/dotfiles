@@ -13,7 +13,7 @@
 [push]
   # Push to the branch with the same name as current on remote
   default = current
-  # Make `git push` push relevant annotated tags when pushing branches out.
+  # Make `git push` push related tags along with branches.
   followTags = true
 
 [mergetool "subl"]
