@@ -18,11 +18,19 @@ plugins=(git zsh-syntax-highlighting)
 
 # User configuration
 
-# Good old PATH. Nothing from bash here, just set again from scratch
-export PATH="/usr/bin:/bin:/usr/sbin:/sbin"
+# Good old PATH. Inherits some stuff from BASH I belive
+export PATH="/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 
 # Add Homebrew
 export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
+
+# Add nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
 
 # Import private, un-versioned auth tokens
 source ~/.auth
