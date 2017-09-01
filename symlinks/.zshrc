@@ -1,11 +1,8 @@
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/RobW/.oh-my-zsh
 
-# Set name of the theme to load.
-# Look in ~/.oh-my-zsh/themes/
-# Optionally, if you set this to "random", it'll load a random theme each
-# time that oh-my-zsh is loaded.
-ZSH_THEME="pure"
+# Sindre's Pure promp init part 1
+ZSH_THEME=""
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # COMPLETION_WAITING_DOTS="true"
@@ -16,7 +13,12 @@ ZSH_THEME="pure"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git zsh-syntax-highlighting)
 
-# User configuration
+# Load OH MY! ZSHHHH
+source $ZSH/oh-my-zsh.sh
+
+# Sindre's Pure promp init part 2
+autoload -U promptinit; promptinit
+prompt pure
 
 # Good old PATH. Inherits some stuff from BASH I belive
 export PATH="/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
@@ -34,9 +36,6 @@ export PATH="$PATH:$HOME/.rvm/bin"
 
 # Import private, un-versioned auth tokens
 source ~/.auth
-
-# Load OH MY! ZSHHHH
-source $ZSH/oh-my-zsh.sh
 
 # Load up that z search
 . /usr/local/Cellar/z/1.8/etc/profile.d/z.sh
