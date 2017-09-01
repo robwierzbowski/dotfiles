@@ -102,21 +102,3 @@ ggo() {
 stato() {
   subl $(git status --porcelain | sed -ne 's/^ M //p')
 }
-
-# ### Casper ###
-# Postgres
-export PGHOST=localhost
-
-# Enable livereload in Casper
-LIVE_RELOAD=true
-
-# Spec helper
-rspecdb() {
-rake db:drop db:setup RAILS_ENV=test
-  rspec $@
-}
-
-# Deploy
-caspd() {
-  git push -f $1 $2:master && heroku run rake db:migrate -r $1
-}
