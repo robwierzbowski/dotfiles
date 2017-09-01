@@ -24,14 +24,6 @@ export PATH="/usr/bin:/bin:/usr/sbin:/sbin"
 # Add Homebrew
 export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 
-# Add RVM to PATH for scripting
-export PATH="$PATH:$HOME/.rvm/gems"
-export PATH="$PATH:$HOME/.rvm/bin"
-
-# Add Yarn packages
-export PATH="$PATH:$HOME/.yarn/bin"
-export PATH="$PATH:$HOME/usr/local/Cellar/node/7.2.0/bin"
-
 # Import private, un-versioned auth tokens
 source ~/.auth
 
@@ -40,9 +32,6 @@ source $ZSH/oh-my-zsh.sh
 
 # Load up that z search
 . /usr/local/Cellar/z/1.8/etc/profile.d/z.sh
-
-# Load RVM
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 # Preferred editor for local and remote sessions
 # export EDITOR='subl'
