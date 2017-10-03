@@ -55,7 +55,7 @@ ssh-add -K ~/.ssh/id_rsa
 unalias -m 'g*'
 
 # General aliases
-alias zshrc='subl ~/.zshrc'
+alias zrc='subl ~/.zshrc'
 alias reload='source ~/.zshrc'
 alias ip='ipconfig getifaddr en0'
 
