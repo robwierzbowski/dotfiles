@@ -100,9 +100,9 @@ stato() {
 # Joke functions
 # When I mistype `amend`
 amen() {
-  amend $@; echo "Halleluja!"
+  amend $@; echo "\nHalleluja!"
 }
 
 nom() {
-  npm $@; echo "nom nom nom nom nom"
+  npm $@; echo "\nnom nom nom nom nom"
 }

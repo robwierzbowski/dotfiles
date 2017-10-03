@@ -22,9 +22,13 @@
 		"serializer",
 		"infographic",
 		"inline",
-		"Stroustrup"
+		"Stroustrup",
+		"Wierzbowski",
+		"transpiled",
+		"webpack",
+		"Transpiler"
 	],
-	"color_scheme": "Packages/User/SublimeLinter/base16-twilight (SL).tmTheme",
+	"color_scheme": "Packages/User/SublimeLinter/base16-twilight.dark (SL).tmTheme",
 	"ensure_newline_at_eof_on_save": true,
 	"folder_exclude_patterns":
 	[
