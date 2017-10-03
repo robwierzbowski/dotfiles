@@ -96,3 +96,13 @@ ggo() {
 stato() {
   subl $(git status --porcelain | sed -ne 's/^ M //p')
 }
+
+# Joke functions
+# When I mistype `amend`
+amen() {
+  amend $@; echo "Halleluja!"
+}
+
+nom() {
+  npm $@; echo "nom nom nom nom nom"
+}
