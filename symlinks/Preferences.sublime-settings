@@ -26,7 +26,8 @@
 		"Wierzbowski",
 		"transpiled",
 		"webpack",
-		"Transpiler"
+		"Transpiler",
+		"transpile"
 	],
 	"color_scheme": "Packages/User/SublimeLinter/base16-twilight.dark (SL).tmTheme",
 	"ensure_newline_at_eof_on_save": true,
