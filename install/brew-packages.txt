@@ -1,0 +1,13 @@
+awscli
+coreutils
+gcc
+git
+hub
+imagemagick
+libvo-aacenc
+mas
+mpv
+phantomjs
+z
+zsh
+zsh-completions
