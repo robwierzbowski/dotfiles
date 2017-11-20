@@ -1,5 +1,5 @@
 # Hidden folders
-# Takes care of .tmp, .sass-cache, and many others
+# Handles .tmp, .sass-cache, and many others
 .*/
 
 # OS generated files
@@ -14,4 +14,3 @@
 
 # Dependency directories
 node_modules
-bower_components

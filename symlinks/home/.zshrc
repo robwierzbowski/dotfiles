@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/RobW/.oh-my-zsh
+export ZSH=~/.oh-my-zsh
 
 # Sindre's Pure promp init part 1
 ZSH_THEME=""
@@ -38,10 +38,12 @@ export PATH="$PATH:$HOME/.rvm/bin"
 source ~/.auth
 
 # Load up that z search
-. /usr/local/Cellar/z/1.8/etc/profile.d/z.sh
+# RWRW Had to switch this on the new computer!
+# /usr/local/Cellar/z/1.8/etc/profile.d/z.sh
+. /usr/local/etc/profile.d/z.sh
 
 # Preferred editor for local and remote sessions
-# export EDITOR='subl'
+# export EDITOR='atom'
 
 # ssh
 ssh-add -K ~/.ssh/id_rsa
@@ -55,7 +57,7 @@ ssh-add -K ~/.ssh/id_rsa
 unalias -m 'g*'
 
 # General aliases
-alias zrc='subl ~/.zshrc'
+alias zshrc='atom ~/.zshrc'
 alias reload='source ~/.zshrc'
 alias ip='ipconfig getifaddr en0'
 
@@ -91,18 +93,19 @@ gg() {
   git grep --break --heading --line-number $@;
 }
 ggo() {
-  subl $(git grep -l $@);
+  atom $(git grep -l $@);
 }
 stato() {
-  subl $(git status --porcelain | sed -ne 's/^ M //p')
+  atom $(git status --porcelain | sed -ne 's/^ M //p')
 }
 
 # Joke functions
-# When I mistype `amend`
+# Mistyped `amend`
 amen() {
   amend $@; echo "\nHalleluja!"
 }
 
+# Mistyped `npm`
 nom() {
   npm $@; echo "\nnom nom nom nom nom"
 }

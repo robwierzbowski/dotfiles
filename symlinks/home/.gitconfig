@@ -1,8 +1,9 @@
 [core]
-  editor = subl -n -w
+  editor = atom --wait
   excludesfile = ~/.gitignore
-  attributesfile = ~/.gitattributes
 
+# Going to need to config for multiple accts
+# https://code.tutsplus.com/tutorials/quick-tip-how-to-work-with-github-and-multiple-accounts--net-22574
 [user]
   name = Rob Wierzbowski
   email = rob.wierzbowski@gmail.com
@@ -16,15 +17,12 @@
   # Make `git push` push related tags along with branches.
   followTags = true
 
-[mergetool "subl"]
-  cmd = subl -w $MERGED
+[mergetool "atom"]
+  cmd = atom --wait $MERGED
   trustExitCode = false
 
 [merge]
-  tool = subl
+  tool = atom
 
-[alias]
-  heroku-prod-deployed-commit=!sh -c 'heroku releases -r production | grep Deploy | tr -s \" \" | cut -d \" \" -f 3 | head -n 1' -
-  compare-heroku=!sh -c 'hub compare $(git heroku-prod-deployed-commit)..master' -
 [credential]
 	helper = osxkeychain
