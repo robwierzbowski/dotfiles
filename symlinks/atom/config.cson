@@ -1,0 +1,117 @@
+"*":
+  "atom-ternjs":
+    guess: false
+    inlineFnCompletion: false
+  "autocomplete-paths":
+    enableHtmlSupport: true
+    normalizeSlashes: false
+  "autocomplete-plus":
+    autoActivationDelay: 50
+    includeCompletionsFromAllBuffers: false
+    similarSuggestionRemoval: "textOrSnippet"
+    strictMatching: true
+  autosave: {}
+  "base16-syntax":
+    scheme: "Twilight"
+  core:
+    audioBeep: false
+    disabledPackages: [
+      "whitespace"
+      "autosave"
+      "background-tips"
+      "bookmarks"
+      "exception-reporting"
+      "go-to-line"
+      "language-c"
+      "language-clojure"
+      "language-csharp"
+      "language-go"
+      "language-java"
+      "language-objective-c"
+      "language-perl"
+      "language-php"
+      "language-python"
+      "language-toml"
+      "language-typescript"
+      "metrics"
+      "package-generator"
+      "styleguide"
+      "welcome"
+    ]
+    ignoredNames: [
+      ".git"
+      ".hg"
+      ".svn"
+      ".DS_Store"
+      "._*"
+      "Thumbs.db"
+      "desktop.ini"
+      "node_modules"
+      ".tmp"
+      "coverage"
+      "*.js.map"
+    ]
+    openEmptyEditorOnStart: false
+    packagesWithKeymapsDisabled: [
+      "highlight-selected"
+      "atom-ternjs"
+    ]
+    projectHome: "/Users/RobW/Documents/OSS"
+    telemetryConsent: "no"
+    themes: [
+      "isotope-ui"
+      "base16-syntax"
+    ]
+  editor:
+    fontFamily: "Inconsolata-dz"
+    lineHeight: 1.4
+    scrollPastEnd: true
+    scrollSensitivity: 100
+    showIndentGuide: true
+    softWrap: true
+  "exception-reporting":
+    userId: "29cc775d-e4f9-4d0c-b38f-55e8f73484b7"
+  "fuzzy-finder": {}
+  "git-blame":
+    columnWidth: 273
+  "highlight-selected":
+    highlightBackground: true
+  "isotope-ui":
+    lowContrastTooltip: true
+    minimalMode: true
+    tabSizing: "Minimum"
+  "language-babel":
+    autoIndentJSX: true
+    babelMapsAddUrl: false
+    createTargetDirectories: false
+    disableWhenNoBabelrcFileInPath: false
+    suppressSourcePathMessages: false
+    suppressTranspileOnSaveMessages: false
+  linter:
+    lintPreviewTabs: false
+  "linter-ui-default":
+    showPanel: true
+  "markdown-preview":
+    useGitHubStyle: true
+  "one-dark-ui":
+    tabSizing: "Minimum"
+  "spell-check":
+    grammars: [
+      "source.asciidoc"
+      "source.gfm"
+      "text.git-commit"
+      "text.plain"
+      "text.plain.null-grammar"
+      "source.css"
+      "text.html"
+      "source.css"
+      "source.js"
+      "source.json"
+    ]
+  tabs:
+    enableMruTabSwitching: false
+    enableVcsColoring: true
+  "toggle-quotes":
+    quoteCharacters: "\"'`"
+  welcome:
+    showOnStartup: false

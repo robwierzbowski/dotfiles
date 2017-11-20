@@ -1,0 +1,82 @@
+/*
+ * Your Stylesheet
+ *
+ * This stylesheet is loaded when Atom starts up and is reloaded automatically
+ * when it is changed and saved.
+ *
+ * Add your own CSS or Less to fully customize Atom.
+ * If you are unfamiliar with Less, you can read more about it here:
+ * http://lesscss.org
+ */
+
+
+/*
+ * Examples
+ * (To see them, uncomment and save)
+ */
+
+// style the background color of the tree view
+// .tree-view {
+//   background-color: whitesmoke;
+// }
+
+// style the background and foreground colors on the atom-text-editor-element itself
+// atom-text-editor {
+//   color: white;
+//   background-color: hsl(180, 24%, 1%);
+// }
+
+// style UI elements inside atom-text-editor
+// atom-text-editor .cursor {
+//   border-color: pink;
+// }
+
+// Active tab
+// Brighten active tab
+atom-pane .tab-bar .tab.active {
+  color: hsl(0, 0%, 85%);
+  background: hsl(0, 0%, 12%);
+}
+
+// Close Button
+// Align better
+.tab-bar .tab .close-icon:before {
+  top: 1px;
+}
+
+// File type icon in tab
+// Align better
+.title:before {
+  position: relative;
+  top: 3px !important;
+}
+
+// Highlight in tree view
+// Fix bad alignment
+.list-tree li.selected:before {
+  margin-top: 0.25rem;
+}
+
+// highlight-selected
+atom-text-editor {
+  // Box
+  .highlights .highlight-selected .region {
+    border: 0;
+    border-bottom: 1px solid hsla(0, 0%, 90%, 0.75);
+    border-radius: 0em;
+  }
+
+  // Background
+  // TODO: Replace this with a diagonal zebra stripe!
+  .highlights .highlight-selected.background .region {
+    background-color: hsla(218, 15%, 55%, 0.15);
+  }
+}
+
+.tool-panel.tree-view {
+  background-color: hsl(0, 0%, 10.5%);
+
+  .icon::before {
+    opacity: 0.8;
+  }
+}
