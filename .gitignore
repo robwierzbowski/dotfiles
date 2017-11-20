@@ -1,6 +1,6 @@
 # Hidden folders
 # Takes care of .tmp, .sass-cache, and many others
-.*/
+.*/**
 
 # OS generated files
 .DS_Store*
