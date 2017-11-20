@@ -99,7 +99,7 @@ stato() {
   atom $(git status --porcelain | sed -ne 's/^ M //p')
 }
 
-# Joke functions
+# Fun functions
 # Mistyped `amend`
 amen() {
   amend $@; echo "\nHalleluja!"
