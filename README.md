@@ -25,7 +25,7 @@ The essentials for setting up a new computer. Just the necessities.
 - Licecap
 - Slack
 - Photoshop
-- Sublime
+- Atom (for now)
 - XCode and XCode Command Line Tools
 
 ### Install files
