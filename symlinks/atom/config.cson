@@ -37,6 +37,9 @@
       "package-generator"
       "styleguide"
       "welcome"
+      "linter-jsonlint"
+      "language-javascript"
+      "language-source"
     ]
     ignoredNames: [
       ".git"
@@ -55,6 +58,8 @@
     packagesWithKeymapsDisabled: [
       "highlight-selected"
       "atom-ternjs"
+      "todo-show"
+      "package-list"
     ]
     projectHome: "/Users/RobW/Documents/OSS"
     telemetryConsent: "no"
@@ -69,11 +74,15 @@
     scrollSensitivity: 100
     showIndentGuide: true
     softWrap: true
+    softWrapHangingIndent: 2
   "exception-reporting":
     userId: "29cc775d-e4f9-4d0c-b38f-55e8f73484b7"
+  "find-and-replace":
+    closeFindPanelAfterSearch: true
   "fuzzy-finder": {}
   "git-blame":
     columnWidth: 273
+  "git-diff": {}
   "highlight-selected":
     highlightBackground: true
   "isotope-ui":
@@ -89,13 +98,15 @@
     suppressTranspileOnSaveMessages: false
   linter:
     lintPreviewTabs: false
-  "linter-ui-default":
-    showPanel: true
+  "linter-ui-default": {}
   "markdown-preview":
     useGitHubStyle: true
   "one-dark-ui":
     tabSizing: "Minimum"
+  "open-recent":
+    listDirectoriesAddedToProject: true
   "spell-check":
+    addKnownWords: true
     grammars: [
       "source.asciidoc"
       "source.gfm"
@@ -108,9 +119,26 @@
       "source.js"
       "source.json"
     ]
+    knownWords: [
+      "Onboarding"
+    ]
   tabs:
     enableMruTabSwitching: false
     enableVcsColoring: true
+  "todo-show":
+    findTheseTodos: [
+      "TODO"
+      "FIXME"
+      "XXX"
+      "IDEA"
+      "HACK"
+      "NOTE"
+      "REVIEW"
+      "BUG"
+      "QUESTION"
+      "TEMP"
+      "RWRW"
+    ]
   "toggle-quotes":
     quoteCharacters: "\"'`"
   welcome:
