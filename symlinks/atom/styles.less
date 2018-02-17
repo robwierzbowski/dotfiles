@@ -9,7 +9,6 @@
  * http://lesscss.org
  */
 
-
 /*
  * Examples
  * (To see them, uncomment and save)
@@ -33,9 +32,12 @@
 
 // Active tab
 // Brighten active tab
-atom-pane .tab-bar .tab.active {
+atom-pane.active .tab-bar .tab.active {
   color: hsl(0, 0%, 85%);
-  background: hsl(0, 0%, 12%);
+}
+
+atom-pane .tab-bar .tab.active {
+  background: hsl(0, 0%, 10%);
 }
 
 // Close Button
@@ -55,6 +57,10 @@ atom-pane .tab-bar .tab.active {
 // Fix bad alignment
 .list-tree li.selected:before {
   margin-top: 0.25rem;
+}
+
+.syntax--italic {
+
 }
 
 // highlight-selected
@@ -78,5 +84,13 @@ atom-text-editor {
 
   .icon::before {
     opacity: 0.8;
+  }
+}
+
+// git commit syntax
+.syntax--git-commit {
+  .syntax--invalid.syntax--illegal {
+    color: inherit;
+    background-color: black;
   }
 }
