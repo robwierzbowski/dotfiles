@@ -16,7 +16,6 @@
   core:
     audioBeep: false
     disabledPackages: [
-      "whitespace"
       "autosave"
       "background-tips"
       "bookmarks"
@@ -40,6 +39,7 @@
       "linter-jsonlint"
       "language-javascript"
       "language-source"
+      "whitespace"
     ]
     ignoredNames: [
       ".git"
