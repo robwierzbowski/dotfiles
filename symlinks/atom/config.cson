@@ -68,11 +68,13 @@
       "base16-syntax"
     ]
   editor:
+    autoIndentOnPaste: false
     fontFamily: "Inconsolata-dz"
     lineHeight: 1.4
     scrollPastEnd: true
     scrollSensitivity: 100
     showIndentGuide: true
+    showInvisibles: true
     softWrap: true
     softWrapHangingIndent: 2
   "exception-reporting":
@@ -90,7 +92,6 @@
     minimalMode: true
     tabSizing: "Minimum"
   "language-babel":
-    autoIndentJSX: true
     babelMapsAddUrl: false
     createTargetDirectories: false
     disableWhenNoBabelrcFileInPath: false
