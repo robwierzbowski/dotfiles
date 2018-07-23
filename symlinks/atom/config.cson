@@ -125,6 +125,7 @@
     ]
     knownWords: [
       "Onboarding"
+      "transpiles"
     ]
   tabs:
     enableMruTabSwitching: false
