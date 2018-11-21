@@ -71,7 +71,7 @@
     ]
   editor:
     autoIndentOnPaste: false
-    fontFamily: "Inconsolata-dz"
+    fontFamily: "Inconsolata-dz "
     lineHeight: 1.4
     nonWordCharacters: "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-…-"
     scrollPastEnd: true
@@ -126,10 +126,16 @@
     knownWords: [
       "Onboarding"
       "transpiles"
+      "deprioritize"
+      "stitchfix"
+      "composability"
+      "ssr"
     ]
   tabs:
     enableMruTabSwitching: false
     enableVcsColoring: true
+  teletype:
+    askBeforeJoiningPortalViaExternalApp: false
   "todo-show":
     findTheseTodos: [
       "TODO"
@@ -146,6 +152,8 @@
     ]
   "toggle-quotes":
     quoteCharacters: "\"'`"
+  "tree-view":
+    hideVcsIgnoredFiles: true
   welcome:
     showOnStartup: false
 ".css.postcss.source":
