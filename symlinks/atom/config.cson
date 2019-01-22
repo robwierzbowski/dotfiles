@@ -37,11 +37,11 @@
       "package-generator"
       "styleguide"
       "welcome"
-      "linter-jsonlint"
       "language-javascript"
       "language-source"
       "whitespace"
       "linter-rubocop"
+      "github"
     ]
     ignoredNames: [
       ".git"
