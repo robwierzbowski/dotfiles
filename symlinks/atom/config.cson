@@ -40,7 +40,6 @@
       "language-javascript"
       "language-source"
       "whitespace"
-      "linter-rubocop"
       "github"
     ]
     ignoredNames: [
@@ -55,6 +54,7 @@
       ".tmp"
       "coverage"
       "*.js.map"
+      "dist"
     ]
     openEmptyEditorOnStart: false
     packagesWithKeymapsDisabled: [

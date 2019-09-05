@@ -24,3 +24,14 @@
   'console.log':
     'prefix': 'log'
     'body': 'console.log($1);'
+
+  'Functional React Component':
+    'prefix': 'frc'
+    'body': """import React from 'react';
+
+const ReactComponent = () => {
+  $1
+};
+
+export default ReactComponent;
+    """
