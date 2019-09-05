@@ -9,100 +9,97 @@
  * http://lesscss.org
  */
 
-/*
- * Examples
- * (To see them, uncomment and save)
- */
-
-// style the background color of the tree view
-// .tree-view {
-//   background-color: whitesmoke;
-// }
-
-// style the background and foreground colors on the atom-text-editor-element itself
-// atom-text-editor {
-//   color: white;
-//   background-color: hsl(180, 24%, 1%);
-// }
-
-// style UI elements inside atom-text-editor
-// atom-text-editor .cursor {
-//   border-color: pink;
-// }
-
+// Set inconsolata as the UI font
 // * {
 //   font-family: "Inconsolata-dz";
 // }
 
-// Active tab
-// Brighten active tab
-atom-pane .tab-bar .tab.active {
-  background: hsl(0, 0%, 12%);
-  // border-radius: 5px 5px 0px 0px;
+///////////////////////////////////////////////////////////
+// Changes for One Light + Light Yesterday
+///////////////////////////////////////////////////////////
 
-  .title {
-    color: hsl(0, 0%, 85%);
-  }
-}
-
-// Close Button
-// Align better
-.tab-bar .tab .close-icon:before {
-  top: 1px;
-}
-
-// File type icon in tab
-// Align better
-.title:before {
-  position: relative;
-  top: 3px !important;
-}
-
-// Highlight in tree view
-// Fix bad alignment
-.list-tree li.selected:before {
-  margin-top: 0.25rem;
-}
-
-.syntax--italic {
-
-}
-
-// highlight-selected
 atom-text-editor {
-  // Box
-  .highlights .highlight-selected .region {
-    border: 0;
-    border-bottom: 1px solid hsla(0, 0%, 90%, 0.75);
-    border-radius: 0em;
+  .line.cursor-line.highlight-line {
+    background-color: hsla(0, 0, 0, 0.05) !important;
   }
 
-  // Background
-  // TODO: Replace this with a diagonal zebra stripe!
+  .line.highlight-line {
+    background-color: hsla(0, 0, 0, 0.05) !important;
+  }
+
   .highlights .highlight-selected.background .region {
-    background-color: hsla(218, 15%, 55%, 0.15);
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px hsla(0, 80%, 10%, 0.5) dashed;
+    background: hsla(0, 80%, 70%, 0.1);
   }
 }
 
-.tool-panel.tree-view {
-  background-color: hsl(0, 0%, 10.5%);
+///////////////////////////////////////////////////////////
+// Changes for Isotope + Dark Twilight
+///////////////////////////////////////////////////////////
 
-  .icon::before {
-    opacity: 0.8;
-  }
-}
+// Brighten active tab
+// atom-pane .tab-bar .tab.active {
+//   background: hsl(0, 0%, 12%);
+//   // border-radius: 5px 5px 0px 0px;
+//
+//   .title {
+//     color: hsl(0, 0%, 85%);
+//   }
+// }
+
+// Align Close Button better
+//  .tab-bar .tab .close-icon:before {
+//    top: 1px;
+//  }
+
+// Align File type icon in tab better
+// .title:before {
+//   position: relative;
+//   top: 3px !important;
+// }
+
+// Fix bad alignment in tree view Highlight
+// .list-tree li.selected:before {
+//   margin-top: 0.25rem;
+// }
+
+// Dial in selected text highlight
+// atom-text-editor {
+//   // Box
+//   .highlights .highlight-selected .region {
+//     border: 0;
+//     border-bottom: 1px solid hsla(0, 0%, 90%, 0.75);
+//     border-radius: 0em;
+//   }
+//
+//   // Background
+//   // TODO: Replace this with a diagonal zebra stripe!
+//   .highlights .highlight-selected.background .region {
+//     background-color: hsla(218, 15%, 55%, 0.15);
+//   }
+// }
+
+// .tool-panel.tree-view {
+//   background-color: hsl(0, 0%, 10.5%);
+//
+//   .icon::before {
+//     opacity: 0.8;
+//   }
+// }
 
 // git commit syntax
-.syntax--git-commit {
-  .syntax--invalid.syntax--illegal {
-    color: inherit;
-    background-color: black;
-  }
-}
+// .syntax--git-commit {
+//   .syntax--invalid.syntax--illegal {
+//     color: inherit;
+//     background-color: black;
+//   }
+// }
 
-// The wrap guide is z-indexed above the text. Use opacity and a lighter than
-// text color to let text color shine through.
+// The wrap guide is z-indexed above the text. Use opacity and a darker bg-color
+// to let text and cursor shine through.
 .wrap-guide {
-  background-color: #c8d3da;
+  background-color: #5f5f5f;
   opacity: 0.1;
 }

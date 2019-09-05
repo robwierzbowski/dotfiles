@@ -12,7 +12,7 @@
     strictMatching: true
   autosave: {}
   "base16-syntax":
-    scheme: "Twilight"
+    scheme: "Yesterday"
   core:
     audioBeep: false
     destroyEmptyPanes: false
@@ -66,12 +66,13 @@
     projectHome: "/Users/RobW/Documents/OSS"
     telemetryConsent: "no"
     themes: [
-      "isotope-ui"
+      "one-light-ui"
       "base16-syntax"
     ]
   editor:
     autoIndentOnPaste: false
     fontFamily: "Inconsolata-dz "
+    fontSize: 13
     lineHeight: 1.4
     nonWordCharacters: "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-…-"
     scrollPastEnd: true
@@ -152,8 +153,7 @@
     ]
   "toggle-quotes":
     quoteCharacters: "\"'`"
-  "tree-view":
-    hideVcsIgnoredFiles: true
+  "tree-view": {}
   welcome:
     showOnStartup: false
 ".css.postcss.source":
