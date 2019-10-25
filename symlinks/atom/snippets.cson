@@ -35,3 +35,20 @@ const ReactComponent = () => {
 
 export default ReactComponent;
     """
+
+  'Functional React Component with Style and Proptypes':
+    'prefix': 'frcp'
+    'body': """import React from 'react';
+import PropTypes from 'prop-types';
+import style from './style.module.scss';
+
+const ReactComponent = ({ foo }) => {
+  $1
+};
+
+ReactComponent.propTypes = {
+  foo: PropTypes.string.isRequired,
+}
+
+export default ReactComponent;
+    """
