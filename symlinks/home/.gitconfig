@@ -23,6 +23,7 @@
 
 [merge]
   tool = atom
+  renamelimit = 2468
 
 [credential]
 	helper = osxkeychain
