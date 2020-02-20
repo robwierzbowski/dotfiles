@@ -71,7 +71,7 @@
     ]
   editor:
     autoIndentOnPaste: false
-    fontFamily: "Inconsolata-dz "
+    fontFamily: "Inconsolata-dz"
     fontSize: 13
     lineHeight: 1.4
     nonWordCharacters: "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-…-"
@@ -103,7 +103,8 @@
     suppressTranspileOnSaveMessages: false
   linter:
     lintPreviewTabs: false
-  "linter-ui-default": {}
+  "linter-ui-default":
+    showPanel: true
   "markdown-preview":
     useGitHubStyle: true
   "one-dark-ui":
@@ -131,6 +132,7 @@
       "stitchfix"
       "composability"
       "ssr"
+      "Kufak"
     ]
   tabs:
     enableMruTabSwitching: false
