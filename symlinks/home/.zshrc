@@ -27,15 +27,15 @@ export PATH="/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 
 # Add nvm
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 # Don't use nvm dir completion; we have it already with zsh.
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
 
 # Import private, un-versioned auth tokens
-source ~/.auth
+# source ~/.auth
 
 # Load up that z search
 # RWRW Had to switch this on the new computer!
@@ -109,3 +109,5 @@ amen() {
 nom() {
   npm $@; echo "\nnom nom nom nom nom"
 }
+
+export NPM_TOKEN=4fb65155-b710-4330-8699-9b11d73c2b40

@@ -41,6 +41,8 @@
       "language-source"
       "whitespace"
       "github"
+      "markdown-preview"
+      "linter-rubocop"
     ]
     ignoredNames: [
       ".git"
