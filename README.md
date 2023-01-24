@@ -7,7 +7,7 @@ A minimal repo of dotfiles I want to record and version, and a shortlist of usef
 Add symlinks:
 
 ```shell
-# WARNING! This destroys the original files, so use at your own risk
+# WARNING! This command is destructive and irreversible. Use at your own risk.
 node index.js
 ```
 
