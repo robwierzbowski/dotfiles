@@ -1,0 +1,9 @@
+antigen
+brotli
+circleci
+flac
+git
+mpv
+z
+zopfli
+zsh

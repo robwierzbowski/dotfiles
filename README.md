@@ -1,48 +1,34 @@
-# Dotfiles and Environment Cheat Sheet
+# Dotfiles
 
-This repo is divided into three sections: Direct downloads, install files, and symlinked dotfiles. Install files are used once when setting up the computer, and symlinked files are used to record settings, configuration, etc. 
+A minimal repo of dotfiles I want to record and version, and a shortlist of useful utilities.
 
-## Dotfiles
+## Script installation
 
-Dotfiles are in the folder `symlink/`! As you could guess, they need to be symlinked to their locations.
+Add symlinks:
 
-## Environment Cheat sheet
-
-The essentials for setting up a new computer. Just the necessities.
-
-### Direct Downloads
-
-- nvm
-- rvm
-- Chrome
-- Firefox
-- Unclutter
-- Focus
-- Flux
-- Unarchiver
-- Appzapper
-- Spotify
-- Licecap
-- Slack
-- Photoshop
-- Atom (for now)
-- XCode and XCode Command Line Tools
-
-### Install files
-
-```
-# Homebrew
-xargs brew install < install/brew-packages.txt
-
-# Atom
-apm install --packages-file install/package-list.txt
+```shell
+# WARNING! This destroys the original files, so use at your own risk
+node index.js
 ```
 
-### Global Node packages
+Install brew packages:
 
-- [pure-prompt](https://github.com/sindresorhus/pure)
+```shell
+xargs brew install < brew-list.txt
+```
 
-## TODO
+Install global node packages:
 
-- [ ] Write an install script.
-- [ ] Revise the readme to be more coherent. 
+```shell
+xargs npm install < npm-list.txt
+```
+
+## Manual installation
+
+Some nice utilities. Just the necessities.
+
+- [Appzapper](https://www.appzapper.com/)
+- [Flux](https://justgetflux.com/)
+- [nvm](https://github.com/nvm-sh/nvm)
+- [Unarchiver](https://theunarchiver.com/)
+- [Unclutter](https://unclutterapp.com/)

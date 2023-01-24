@@ -1,0 +1,34 @@
+[core]
+  editor = code --wait
+  excludesfile = ~/.gitignore
+
+[user]
+  name = Rob Wierzbowski
+  email = rob.wierzbowski@gmail.com
+
+[color]
+  ui = auto
+
+[init]
+  defaultBranch = main
+
+[push]
+  # Push to the branch with the same name as current on remote
+  default = current
+  # Push related tags along with branches.
+  followTags = true
+
+[mergetool "code"]
+  cmd = code --wait $MERGED
+  trustExitCode = false
+
+[merge]
+  tool = code
+  renamelimit = 2468
+
+[credential]
+  helper = osxkeychain
+
+[pull]
+  ff = only
+

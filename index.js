@@ -1,42 +1,31 @@
-// Symlink dotfiles
-
 const fs = require('fs');
-const path = require('path')
+const os = require('os');
+const path = require('path');
 
-const symlinkFile = (srcFile, linkFile) => {
-  fs.unlink(linkFile, () => {
-    fs.symlink(
-      srcFile,
-      linkFile,
-      () => { console.log(`Symlinked ${srcFile} to ${linkFile}`); }
-    );
-  });
-}
+const filePaths = [
+  ['.editorconfig', '.editorconfig'],
+  ['.gitconfig', '.gitconfig'],
+  ['.gitignore', '.gitignore'],
+  ['.hyper.js', '.hyper.js'],
+  ['.nvmrc', '.nvmrc'],
+  ['.prettierrc.js', '.prettierrc.js'],
+  ['.zshrc', '.zshrc'],
+  ['LocalDictionary', 'Library/Spelling/LocalDictionary'],
+];
 
-const symlinkByDirectory = (srcDir, linkDir) => {
-  fs.readdir(srcDir, (err, files) => {
-    if (err) { console.log(err); }
+const symlinkFile = ([src, dest]) => {
+  const fullSrcPath = path.join(__dirname, src);
+  const fullDestPath = path.join(os.homedir(), dest);
 
-    files.forEach((file) => {
-      const srcFile = path.join(srcDir, file);
-      const linkFile = path.join(linkDir, file);
+  fs.unlink(fullDestPath, () => {
+    fs.symlink(fullSrcPath, fullDestPath, err => {
+      if (err) {
+        console.log(err);
+      }
 
-      symlinkFile(srcFile, linkFile);
+      console.log(`Symlinked ${src} \n  to ${fullDestPath}`);
     });
   });
 };
 
-const srcHomeFiles = path.join(__dirname, 'symlinks/home');
-const destHomeFiles = process.env['HOME'];
-
-symlinkByDirectory(srcHomeFiles, destHomeFiles);
-
-const srcAtomFiles = path.join(__dirname, 'symlinks/atom');
-const destAtomFiles = path.join(process.env['HOME'], '.atom');
-
-symlinkByDirectory(srcAtomFiles, destAtomFiles);
-
-const srcLibraryFile = path.join(__dirname, 'symlinks/OSX/LocalDictionary');
-const destLibraryFile = path.join(process.env['HOME'], 'Library/Spelling/LocalDictionary');
-
-symlinkFile(srcLibraryFile, destLibraryFile);
+filePaths.forEach(symlinkFile);
