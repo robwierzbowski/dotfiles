@@ -30,6 +30,5 @@ Some nice utilities. Just the necessities.
 - [Appzapper](https://www.appzapper.com/)
 - [Hyper](https://hyper.is/)
 - [nvm](https://github.com/nvm-sh/nvm)
-- [Unarchiver](https://theunarchiver.com/)
 - [Unclutter](https://unclutterapp.com/)
 - [VS Code](https://code.visualstudio.com/)
