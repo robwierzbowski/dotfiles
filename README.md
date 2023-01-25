@@ -4,13 +4,6 @@ A minimal repo of dotfiles I want to record and version, and a shortlist of usef
 
 ## Script installation
 
-Add symlinks:
-
-```shell
-# WARNING! This command is destructive and irreversible. Use at your own risk.
-node index.js
-```
-
 Install brew packages:
 
 ```shell
@@ -21,6 +14,13 @@ Install global node packages:
 
 ```shell
 xargs npm install < npm-list.txt
+```
+
+Add symlinks:
+
+```shell
+# WARNING! This command is destructive and irreversible. Use at your own risk.
+node index.js
 ```
 
 ## Manual installation
