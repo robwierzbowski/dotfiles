@@ -1,3 +1,7 @@
+# Add homebrew to path
+eval $(/opt/homebrew/bin/brew shellenv)
+fpath+=("$(brew --prefix)/share/zsh/site-functions")
+
 # Set ZSH to break word delete on any non-alphanumeric character
 autoload -U select-word-style
 select-word-style bash
@@ -5,15 +9,12 @@ select-word-style bash
 # Add env vars
 # export NPM_TOKEN="xxxxx"
 
-# Add homebrew to path
-export PATH="/usr/local/sbin:$PATH"
-
 # Load Antigen, ZSH plugin manager
-source /usr/local/share/antigen/antigen.zsh
+source /opt/homebrew/share/antigen/antigen.zsh
 
 # Pure prompt
-antigen bundle mafredri/zsh-async
-antigen bundle sindresorhus/pure
+autoload -U promptinit; promptinit
+prompt pure
 
 # Completions
 antigen bundle zsh-users/zsh-completions
@@ -41,10 +42,7 @@ autoload -Uz compinit && compinit
 unsetopt nomatch
 
 # Initialize z
-. /usr/local/etc/profile.d/z.sh
-
-# Load SSH keys
-ssh-add --apple-use-keychain ~/.ssh/id_rsa
+. /opt/homebrew/etc/profile.d/z.sh
 
 # General aliases
 alias zshrc='code ~/.zshrc'

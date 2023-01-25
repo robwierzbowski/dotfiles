@@ -3,6 +3,8 @@ brotli
 circleci
 flac
 git
+node
+pure
 z
 zopfli
 zsh
