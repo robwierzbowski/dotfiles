@@ -12,7 +12,7 @@ module.exports = {
     fontSize: 15,
 
     // font family with optional fallbacks
-    fontFamily: 'Inconsolata-dz, Consolas, monospace',
+    fontFamily: 'iA Writer Mono S, Fira Code',
 
     // default font weight: 'normal' or 'bold'
     fontWeight: 'normal',
@@ -21,7 +21,7 @@ module.exports = {
     fontWeightBold: 'bold',
 
     // line height as a relative unit
-    lineHeight: 1.0,
+    lineHeight: 1,
 
     // letter spacing as a relative unit
     letterSpacing: 0,
@@ -63,7 +63,7 @@ module.exports = {
     showWindowControls: '',
 
     // custom padding (CSS format, i.e.: `top right bottom left`)
-    padding: '12px 16px',
+    padding: '4px 10px 6px',
 
     // the full list. if you're going to provide the full color palette,
     // including the 6 x 6 color cubes and the grayscale map, just provide
@@ -135,6 +135,12 @@ module.exports = {
 
     // for advanced config flags please refer to https://hyper.is/#cfg
     scrollback: 10000,
+
+    // Rose-pine configuration
+    theme: {
+      // Can be core, moon or dawn
+      variant: 'core',
+    },
   },
 
   // a list of plugins to fetch and install from npm
@@ -143,15 +149,19 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: ['hyperterm-synthwave84', 'hyperlinks', 'hypercwd'],
+
+  // Good themes:
+  // 'hyper-dracula', // Dark-ish and colorful-ish
+  // 'hyper-snazzy', // Dracula with a blue prompt
+  // 'hyper-rose-pine', // Very dark, saturated and pink. Can cause errors when unloaded.
+  // 'hyper-honukai', // Like dracula or rose-pine but saturated
+
+  plugins: ['hyperlinks', 'hypercwd', 'hyper-rose-pine'],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
   // to load it and avoid it being `npm install`ed
   localPlugins: [],
 
-  keymaps: {
-    // Example
-    // 'window:devtools': 'cmd+alt+o',
-  },
+  keymaps: {},
 };
