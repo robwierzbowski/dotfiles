@@ -1,6 +1,12 @@
 # Add homebrew to path
 eval $(/opt/homebrew/bin/brew shellenv)
 
+# Add env vars
+# export NPM_TOKEN="xxxxx"
+
+# Add ssh keys
+ssh-add --apple-load-keychain
+
 # Pure prompt
 fpath+=("$(brew --prefix)/share/zsh/site-functions")
 autoload -U promptinit; promptinit
@@ -10,10 +16,7 @@ prompt pure
 autoload -U select-word-style
 select-word-style bash
 
-# Add env vars
-# export NPM_TOKEN="xxxxx"
-
-# TODO: Antigen is abandoned -- I should update to a supported script manager
+# TODO: Antigen is abandoned; update to a supported script manager
 # Load Antigen, ZSH plugin manager
 source /opt/homebrew/share/antigen/antigen.zsh
 
