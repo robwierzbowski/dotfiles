@@ -1,6 +1,10 @@
 # Add homebrew to path
 eval $(/opt/homebrew/bin/brew shellenv)
+
+# Pure prompt
 fpath+=("$(brew --prefix)/share/zsh/site-functions")
+autoload -U promptinit; promptinit
+prompt pure
 
 # Set ZSH to break word delete on any non-alphanumeric character
 autoload -U select-word-style
@@ -9,12 +13,9 @@ select-word-style bash
 # Add env vars
 # export NPM_TOKEN="xxxxx"
 
+# TODO: Antigen is abandoned -- I should update to a supported script manager
 # Load Antigen, ZSH plugin manager
 source /opt/homebrew/share/antigen/antigen.zsh
-
-# Pure prompt
-autoload -U promptinit; promptinit
-prompt pure
 
 # Completions
 antigen bundle zsh-users/zsh-completions

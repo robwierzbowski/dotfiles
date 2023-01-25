@@ -143,18 +143,7 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: [
-    // 'hyper-unity',
-    // 'hyper-snazzy',
-    'hyperterm-synthwave84',
-    // 'hyperterm-lrlld-light',
-
-    // 'hyper-final-say',
-    // 'hyper-statusline',
-    'hyperlinks',
-    'hypercwd',
-  ],
-
+  plugins: ['hyperterm-synthwave84', 'hyperlinks', 'hypercwd'],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
