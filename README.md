@@ -28,7 +28,6 @@ xargs npm install < npm-list.txt
 Some nice utilities. Just the necessities.
 
 - [Appzapper](https://www.appzapper.com/)
-- [Flux](https://justgetflux.com/)
 - [Hyper](https://hyper.is/)
 - [nvm](https://github.com/nvm-sh/nvm)
 - [Unarchiver](https://theunarchiver.com/)
