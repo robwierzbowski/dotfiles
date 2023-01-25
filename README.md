@@ -29,6 +29,7 @@ Some nice utilities. Just the necessities.
 
 - [Appzapper](https://www.appzapper.com/)
 - [Hyper](https://hyper.is/)
+- [mpv](https://mpv.io/installation/)
 - [nvm](https://github.com/nvm-sh/nvm)
 - [Unclutter](https://unclutterapp.com/)
 - [VS Code](https://code.visualstudio.com/)
