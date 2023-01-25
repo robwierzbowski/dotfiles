@@ -7,7 +7,7 @@ A minimal repo of dotfiles I want to record and version, and a shortlist of usef
 Install brew packages:
 
 ```shell
-xargs brew install < brew-list.txt
+brew bundle --file=Brewfile
 ```
 
 Install global node packages:
