@@ -25,7 +25,7 @@ node index.js
 
 ## Manual installation
 
-Some nice utilities. Just the necessities.
+Some nice apps. Just the necessities.
 
 - [Appzapper](https://www.appzapper.com/)
 - [Hyper](https://hyper.is/)
