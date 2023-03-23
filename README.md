@@ -19,7 +19,6 @@ xargs npm install < npm-list.txt
 Add symlinks:
 
 ```shell
-# WARNING! This script is destructive and irreversible. Use at your own risk.
 node index.js
 ```
 
