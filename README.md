@@ -27,8 +27,11 @@ node index.js
 Some nice apps. Just the necessities.
 
 - [Appzapper](https://www.appzapper.com/)
+- [Doppler](https://brushedtype.co/doppler/)
 - [Hyper](https://hyper.is/)
 - [mpv](https://mpv.io/installation/)
+- [NordVPN](https://nordvpn.com/)
 - [nvm](https://github.com/nvm-sh/nvm)
+- [Slack](https://slack.com/)
 - [Unclutter](https://unclutterapp.com/)
 - [VS Code](https://code.visualstudio.com/)
