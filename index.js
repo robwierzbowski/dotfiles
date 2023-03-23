@@ -2,7 +2,7 @@ const fs = require('fs');
 const os = require('os');
 const path = require('path');
 
-const filePaths = [
+const paths = [
   ['.editorconfig', '.editorconfig'],
   ['.gitconfig', '.gitconfig'],
   ['.gitignore', '.gitignore'],
@@ -11,21 +11,20 @@ const filePaths = [
   ['.prettierrc.js', '.prettierrc.js'],
   ['.zshrc', '.zshrc'],
   ['LocalDictionary', 'Library/Spelling/LocalDictionary'],
+  ['.zsh', '.zsh'],
 ];
 
-const symlinkFile = ([src, dest]) => {
+const createSymlinks = ([src, dest]) => {
   const fullSrcPath = path.join(__dirname, src);
   const fullDestPath = path.join(os.homedir(), dest);
 
   fs.unlink(fullDestPath, () => {
     fs.symlink(fullSrcPath, fullDestPath, err => {
-      if (err) {
-        console.log(err);
-      }
+      if (err) console.log(err);
 
       console.log(`Symlinked ${src} \n  to ${fullDestPath}`);
     });
   });
 };
 
-filePaths.forEach(symlinkFile);
+paths.forEach(createSymlinks);

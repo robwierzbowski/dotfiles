@@ -25,24 +25,21 @@ antigen bundle zsh-users/zsh-completions
 
 # Extensions
 antigen bundle zsh-users/zsh-history-substring-search
+
+# Execute all antigen loaded scripts
 antigen apply
 
 # Bind zsh-users/zsh-history-substring-search
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 
-# Make completion case insensitive
-zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}'
-
-# Load Git completion scripts manually
+# Load Git completion
 zstyle ':completion:*:*:git:*' script ~/.zsh/git-completion.bash
-fpath+=$HOME/.zsh
-
-# Init autocompletion
+fpath=(~/.zsh $fpath)
 autoload -Uz compinit && compinit
 
-# Turn off zsh regex matching for all commands (so we can install yarn packages,
-# use URLs in commands, etc.)
+# Turn off zsh regex matching for all commands (so we can install packages with
+# special characters, use URLs in commands, etc.)
 unsetopt nomatch
 
 # Initialize z
