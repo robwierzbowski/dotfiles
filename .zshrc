@@ -7,43 +7,47 @@ eval $(/opt/homebrew/bin/brew shellenv)
 # Add ssh keys
 ssh-add --apple-load-keychain
 
-# Pure prompt
+# Configure zsh
+
+# Set zsh to break word on any non-alphanumeric character
+autoload -U select-word-style
+select-word-style bash
+
+# Use case-insensitive autocomple
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
+
+# Use tab/menu style autocomple
+zstyle ':completion:*' menu select
+
+# Load git completion
+zstyle ':completion:*:*:git:*' script ~/.zsh/git-completion.bash
+fpath=(~/.zsh $fpath)
+autoload -Uz compinit; compinit
+
+# Turn off zsh regex matching so we can run commands with special characters,
+# use URLs in commands, etc. Useful for installing packages by url.
+unsetopt nomatch
+
+# Load Pure prompt
 fpath+=("$(brew --prefix)/share/zsh/site-functions")
 autoload -U promptinit; promptinit
 prompt pure
 
-# Set ZSH to break word delete on any non-alphanumeric character
-autoload -U select-word-style
-select-word-style bash
+# Configure zsh plugins
+export ZPLUG_HOME=/opt/homebrew/opt/zplug
+source $ZPLUG_HOME/init.zsh
+zplug "zsh-users/zsh-completions"
+zplug "zsh-users/zsh-history-substring-search"
+# Trying the zsh native rewrite of z. It's *fast* and has great autocomplete
+zplug "agkozak/zsh-z"
+# Install adds startup time, but it's easier than remembering to run install
+# whenever we change the zshrc. Better UX > a little additional startup time.
+zplug install
+zplug load
 
-# TODO: Antigen is abandoned; update to a supported script manager
-# Load Antigen, ZSH plugin manager
-source /opt/homebrew/share/antigen/antigen.zsh
-
-# Completions
-antigen bundle zsh-users/zsh-completions
-
-# Extensions
-antigen bundle zsh-users/zsh-history-substring-search
-
-# Execute all antigen loaded scripts
-antigen apply
-
-# Bind zsh-users/zsh-history-substring-search
+# Use arrow keys with zsh-users/zsh-history-substring-search
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
-
-# Load Git completion
-zstyle ':completion:*:*:git:*' script ~/.zsh/git-completion.bash
-fpath=(~/.zsh $fpath)
-autoload -Uz compinit && compinit
-
-# Turn off zsh regex matching for all commands (so we can install packages with
-# special characters, use URLs in commands, etc.)
-unsetopt nomatch
-
-# Initialize z
-. /opt/homebrew/etc/profile.d/z.sh
 
 # General aliases
 alias nom='echo "nom nom nom" && npm'
@@ -77,7 +81,8 @@ ggo() { code $(git grep -l $@); }
 rebi() { git rebase -i HEAD~$@; }
 rebo() { git rebase -i origin/main; }
 
-# TODO: Fix this to run from git root, not current directory
+# Opens all tracked changed files
+# TODO: Fix to run from git root, not current directory
 stato() { code $(git status --porcelain | sed -ne 's/^ M //p'); }
 
 # Sets upstream branch to current branchname on origin
