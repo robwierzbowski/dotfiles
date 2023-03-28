@@ -46,8 +46,9 @@ unsetopt nomatch
 . /opt/homebrew/etc/profile.d/z.sh
 
 # General aliases
-alias zshrc='code ~/.zshrc'
+alias nom='echo "nom nom nom" && npm'
 alias hyperrc='code ~/.hyper.js'
+alias zshrc='code ~/.zshrc'
 
 # Git aliases
 alias amend='git commit --amend'
