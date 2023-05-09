@@ -19,6 +19,7 @@ zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 # Use tab/menu style autocomple
 zstyle ':completion:*' menu select
 
+# TODO: Git completion not working — fix
 # Load git completion
 zstyle ':completion:*:*:git:*' script ~/.zsh/git-completion.bash
 fpath=(~/.zsh $fpath)
