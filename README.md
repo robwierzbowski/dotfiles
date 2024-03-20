@@ -28,13 +28,18 @@ node index.js
 
 Some nice apps. Just the necessities.
 
-- [Appzapper](https://www.appzapper.com/)
-- [Doppler](https://brushedtype.co/doppler/)
-- [Hyper](https://hyper.is/)
-- [mpv](https://mpv.io/installation/)
-- [NordVPN](https://nordvpn.com/)
-- [nvm](https://github.com/nvm-sh/nvm)
-- [Slack](https://slack.com/)
-- [Unclutter](https://unclutterapp.com/)
-- [VS Code](https://code.visualstudio.com/)
-- [XCode](https://apps.apple.com/us/app/xcode/id497799835?mt=12/)
+🏡: _For home_ 🧑🏽‍💻: _For work_
+
+- 🏡🧑🏽‍💻 [Appzapper](https://www.appzapper.com/)
+- 🏡🧑🏽‍💻 [DaisyDisk](https://daisydiskapp.com/)
+- 🏡🧑🏽‍💻 [NordVPN](https://nordvpn.com/)
+- 🏡🧑🏽‍💻 [Slack](https://slack.com/)
+- 🏡🧑🏽‍💻 [Spotify](https://spotify.com/)
+- 🏡🧑🏽‍💻 [Unclutter](https://unclutterapp.com/)
+- 🏡 [Doppler](https://brushedtype.co/doppler/)
+- 🏡 [mpv](https://mpv.io/installation/)
+- 🧑🏽‍💻 [Hyper](https://hyper.is/)
+- 🧑🏽‍💻 [nvm](https://github.com/nvm-sh/nvm)
+- 🧑🏽‍💻 [VS Code](https://code.visualstudio.com/)
+- 🧑🏽‍💻 [XCode](https://apps.apple.com/us/app/xcode/id497799835?mt=12/)
+- 🧑🏽‍💻 [Zoom](https://zoom.us/download?os=mac/)
