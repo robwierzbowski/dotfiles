@@ -35,3 +35,4 @@ Some nice apps. Just the necessities.
 - [Slack](https://slack.com/)
 - [Unclutter](https://unclutterapp.com/)
 - [VS Code](https://code.visualstudio.com/)
+- [XCode](https://apps.apple.com/us/app/xcode/id497799835?mt=12/)
