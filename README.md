@@ -2,13 +2,15 @@
 
 A minimal repo of dotfiles I want to record and version, and a shortlist of useful utilities.
 
-## Script installation
+## Installation
 
-Install brew packages:
+Install brew and VS Code packages from the brewfile:
 
 ```shell
 brew bundle --file=Brewfile
 ```
+
+_To update the brewfile, run:_ `brew bundle dump --all --describe --force`
 
 Install global node packages:
 
