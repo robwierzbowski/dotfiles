@@ -2,7 +2,7 @@
 
 A minimal repo of dotfiles I want to record and version, and a shortlist of useful utilities.
 
-## Installation
+## Installation from the command line
 
 Install brew and VS Code packages from the brewfile:
 
@@ -10,7 +10,11 @@ Install brew and VS Code packages from the brewfile:
 brew bundle --file=Brewfile
 ```
 
-_To update the brewfile, run:_ `brew bundle dump --all --describe --force`
+To update the brewfile, run:
+
+```shell
+brew bundle dump --all --describe --force
+```
 
 Install global node packages:
 
