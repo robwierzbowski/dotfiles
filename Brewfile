@@ -13,8 +13,6 @@ brew "webp"
 brew "jpeg-xl"
 # Codec library for encoding and decoding AV1 video streams
 brew "aom"
-# Enables you to reproduce the CircleCI environment locally
-brew "circleci"
 # Collection of reusable C++ library artifacts developed at Facebook
 brew "folly"
 # Shared library for Watchman and Eden projects
@@ -25,8 +23,6 @@ brew "fizz"
 brew "wangle"
 # Thrift functions for querying information from a service
 brew "fb303"
-# Facebook's branch of Apache Thrift, including a new C++ server
-brew "fbthrift"
 # Free lossless audio codec
 brew "flac"
 # Library for JPEG-2000 image manipulation
@@ -63,8 +59,6 @@ brew "tree"
 brew "watchman"
 # Utilities to create and convert Web Open Font File (WOFF) files
 brew "woff2"
-# JavaScript package manager
-brew "yarn"
 # Tracks most-used directories to make cd smarter
 brew "z"
 # New zlib (gzip, deflate) compatible compressor
