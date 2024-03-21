@@ -4,7 +4,7 @@ A minimal repo of dotfiles I want to record and version, and a shortlist of usef
 
 ## Installation from the command line
 
-Install brew and VS Code packages from the brewfile:
+Install homebrew packages, VS Code, and VS Code packages from the brewfile:
 
 ```shell
 brew bundle --file=Brewfile
