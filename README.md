@@ -10,11 +10,7 @@ Install brew and VS Code packages from the brewfile:
 brew bundle --file=Brewfile
 ```
 
-If you want to update the brewfile at a later date, run:
-
-```shell
-brew bundle dump --all --describe --force
-```
+(If you want to update the brewfile at a later date, run `brew bundle dump --all --describe --force`.)
 
 Install global node packages:
 
