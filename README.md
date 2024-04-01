@@ -4,6 +4,15 @@ A minimal repo of dotfiles I want to record and version, and a shortlist of usef
 
 ## Installation from the command line
 
+Install [homebrew](https://brew.sh/).  
+Install [nvm](https://github.com/nvm-sh/nvm).
+
+Install the latest node:
+
+```shell
+nvm use node
+```
+
 Install homebrew packages, VS Code, and VS Code packages from the brewfile:
 
 ```shell
@@ -24,11 +33,14 @@ Add symlinks:
 node index.js
 ```
 
+<!-- TODO instructions about adding SSH for GH, etc -->
+
 ## Manual installation
 
 Some nice apps. Just the necessities.
 
-🏡: _For home_ 🧑🏽‍💻: _For work_
+🏡: _For home_  
+🧑🏽‍💻: _For work_
 
 - 🏡🧑🏽‍💻 [Appzapper](https://www.appzapper.com/)
 - 🏡🧑🏽‍💻 [DaisyDisk](https://daisydiskapp.com/)
